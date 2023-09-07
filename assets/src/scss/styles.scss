@@ -1,0 +1,44 @@
+/*
+*
+* MetaBoxes
+*
+*/
+#cpt_vi_metabox_1 {
+    .cpt_vi_metabox1 {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        flex-direction: column;
+        justify-content: flex-start;
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            align-self: center;
+            align-items: center;
+            align-content: center;
+            gap: 30px;
+        }
+        p {
+            display: flex;
+            align-items: center;
+            @media screen and (min-width: 1024px) {
+                flex: 1 1 calc(50% - 30px);
+                max-width: calc(50% - 15px);
+            }
+            gap: 14px;
+            label {
+                width: 120px;
+                display: flex;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+    .tabs-panel {
+        height: 80px !important;
+    }
+}
